@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sentimental-widget/static/css/main.ee308257.chunk.css",
+    "main.js": "/sentimental-widget/static/js/main.e4546ad5.chunk.js",
+    "main.js.map": "/sentimental-widget/static/js/main.e4546ad5.chunk.js.map",
+    "runtime-main.js": "/sentimental-widget/static/js/runtime-main.a7c01257.js",
+    "runtime-main.js.map": "/sentimental-widget/static/js/runtime-main.a7c01257.js.map",
+    "static/js/2.677785fb.chunk.js": "/sentimental-widget/static/js/2.677785fb.chunk.js",
+    "static/js/2.677785fb.chunk.js.map": "/sentimental-widget/static/js/2.677785fb.chunk.js.map",
+    "index.html": "/sentimental-widget/index.html",
+    "precache-manifest.f35b1c1fae85f4984527bc05ac295c86.js": "/sentimental-widget/precache-manifest.f35b1c1fae85f4984527bc05ac295c86.js",
+    "service-worker.js": "/sentimental-widget/service-worker.js",
+    "static/css/main.ee308257.chunk.css.map": "/sentimental-widget/static/css/main.ee308257.chunk.css.map",
+    "static/js/2.677785fb.chunk.js.LICENSE.txt": "/sentimental-widget/static/js/2.677785fb.chunk.js.LICENSE.txt",
+    "static/media/smile.svg": "/sentimental-widget/static/media/smile.1306e005.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7c01257.js",
+    "static/js/2.677785fb.chunk.js",
+    "static/css/main.ee308257.chunk.css",
+    "static/js/main.e4546ad5.chunk.js"
+  ]
+}
