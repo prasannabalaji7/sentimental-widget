@@ -1,0 +1,9 @@
+@import './variables';
+
+.appContent {
+      background: $app-background-base;
+      background: linear-gradient(180deg, $app-background-base 0%, $app-background-base 16%, lighten($app-background-base, 10) 100%);
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
+    }

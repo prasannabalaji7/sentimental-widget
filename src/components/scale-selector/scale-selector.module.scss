@@ -1,0 +1,57 @@
+@import '../../assets/styles/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  .scaleSelector {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    justify-content: center;
+  
+    > li {
+      .buttonRating {
+        background: none;
+        border: $rating-scale-button-border;
+        border-right: none;
+        width: $rating-scale-button-width;
+        height: $rating-scale-button-height;
+        outline: none;
+
+        
+        &:hover {
+          background: $rating-scale-button-hover-bg;
+        }
+      } 
+  
+      &:first-child {
+        .buttonRating {
+          border-top-left-radius: $app-border-radius;
+          border-bottom-left-radius: $app-border-radius;
+        }
+      }
+  
+      &:last-child {
+        .buttonRating {
+          border-right: $rating-scale-button-border;
+          border-top-right-radius: $app-border-radius;
+          border-bottom-right-radius: $app-border-radius;
+        }
+      }
+    }
+  }
+
+  .ratingText {
+    display: flex;
+    justify-content: space-around;
+    .text {
+      font-size: 50%;
+      text-transform: uppercase;
+      color: lighten($color: $app-font-color, $amount: 40)
+      
+    }
+  }
+}
+

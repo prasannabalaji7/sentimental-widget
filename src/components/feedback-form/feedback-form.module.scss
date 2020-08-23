@@ -1,0 +1,84 @@
+@import '../../assets/styles/variables';
+
+.form {
+  height: 100%;
+  width: 100%;
+  max-height: 100%; 
+
+  &Appear, &Enter {
+    opacity: 0;
+  }
+
+  &EnterDone {
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+  }
+
+  &Exit, &ExitActive {
+    opacity: 1;
+  }
+
+  &ExitDone {
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+  }
+
+  .header {
+    display: flex;
+    height: 70px;
+    background-color: $feedback-form-header-bg;
+    border-top-right-radius: $app-border-radius;
+    border-top-left-radius: $app-border-radius;
+    justify-content: center;
+    align-items: center;
+    color: $off-white;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+    margin-top: 30px;
+
+    .formGroup {
+      margin-bottom: 25px;
+    }
+
+    input, textarea {
+      border: 1px solid $light-grey;
+      border-radius: $app-border-radius;
+      width: 100%;
+      box-sizing: border-box;
+      resize: none;
+      padding: 10px;
+      font-size: 80%;
+      color: $feedback-form-input-text-color
+    }
+
+    .label {
+      font-weight: 400;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .submitButtonStyles {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+      button {
+        border: none;
+        padding: 13px 25px;
+        border-radius: $app-border-radius;
+        background: darken($color: $feedback-form-submit-btn-bg-color, $amount: 40);
+        color: $feedback-form-submit-btn-text-color;
+        transition: background 0.5s ease-in;
+      }
+      button[disabled] {
+        background: $feedback-form-submit-btn-bg-color;
+        color: $feedback-form-submit-btn-text-color;
+        cursor: not-allowed;
+      }
+    }    
+  }
+}

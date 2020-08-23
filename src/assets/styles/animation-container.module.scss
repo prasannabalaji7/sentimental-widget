@@ -1,0 +1,40 @@
+@import './variables';
+
+.root {
+    // @include generate-emoji($emoji-height-width-default);
+    font-size: 1.5rem; // Setting base relative to container for all child components
+    position: relative;
+  
+    &.next-component-container-0 {
+      transition: all $animation-step-2-duration ease-in-out;
+      width: $emoji-height-width-default;    
+      width: $emoji-height-width-default;    
+      font-size: $emoji-height-width-default;
+    }
+    &.next-component-container-1 {
+      transition: width $animation-step-2-duration ease-in-out, height $animation-step-2-duration ease-in-out;
+      width: $emoji-height-width-default + 250;
+      &.button-slide {
+        display: flex;
+      }
+    }
+  
+    &.next-component-container-2, &.next-component-container-4 {
+      width: 100%;
+      height: 200px;
+      border-radius: $app-border-radius;
+      background: #fff;
+      box-shadow: none;
+      transition: all 0.25s ease-in;
+    }
+  
+    &.next-component-container-3 {
+      padding: 0;
+      width: 85%;
+      height: 80%;
+      border-radius: $app-border-radius;
+      background: #fff;
+      box-shadow: none;
+      transition: all 0.5s ease-in;
+    }  
+  }

@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables';
+
+.emojiWrapper {
+  border-style: none;
+  text-align: left;
+  padding: 0;
+  background: none;
+  > .emoji {
+    position: relative;
+    width: $emoji-height-width-default;
+    height: $emoji-height-width-default;
+    &-appear, &-enter {
+      opacity: 0;
+    }
+
+    &-enter-done {
+      opacity:1;
+      transition: all 200ms ease-in-out;
+    }
+
+    &-exit {
+      opacity: 1;
+    }
+
+    &-exit-active {
+      opacity: 0;
+      transition: opacity 200ms;
+    }
+  }
+}

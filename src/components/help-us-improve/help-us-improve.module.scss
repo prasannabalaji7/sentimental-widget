@@ -1,0 +1,31 @@
+@import '../../assets/styles/variables';
+
+.button {
+  background: none;
+  border-style: none;
+  color: $off-white;
+  font-weight: bold;
+  outline: none;
+  white-space: nowrap;
+  display: none; 
+  background: black;
+  border-radius: 1.5em;
+  min-height: 4em;
+  &Appear, &Enter {
+    opacity: 0;
+    transform: translateX(-20px);
+    display: block;
+    /* smartphones, touchscreens */
+    @media (hover: none) and (pointer: coarse) {
+      display: none;
+    }
+  }
+
+  &EnterDone {
+    opacity:1;
+    transform: translateX(0px);
+    transition: all 500ms ease-in-out;
+    display: block;
+  }
+}
+

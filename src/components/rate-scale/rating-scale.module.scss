@@ -1,0 +1,55 @@
+@import '../../assets/styles/variables';
+
+.heading {
+  &_appear, &_enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  &_enter_done {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.headingText {
+   margin-bottom: 0;text-align: center; margin-top:0; 
+}
+
+
+.selector {
+  @media (hover: none) and (pointer: coarse) {
+    display: none;
+  }
+  &_appear, &_enter {
+    opacity: 0;
+    transform: translateY(-20px);
+    @media (hover: none) and (pointer: coarse) {
+      display: none;
+    }
+  }
+
+  &_enter_done {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s ease-in-out;
+    @media (hover: none) and (pointer: coarse) {
+      display: block;
+    }
+  }
+}
+
+.onRatingReceived {
+  display: flex;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  .emojiWrapper {
+    // @include generate-emoji($emoji-height-width-default);
+    margin-right: 15px;
+    [role="img"] {      
+      font-size: $emoji-height-width-default;
+    }
+  }
+}
